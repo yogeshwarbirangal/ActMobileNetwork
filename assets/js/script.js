@@ -52,17 +52,17 @@
         let welcomeText = '';
 
 
-            if(hour >= 0 && hour < 12){
+            if(hour >= 0 && hour < 11 ){
                 welcomeText = textType[0];
             }
-            else if( hour >=12 && hour <= 18 ){
+            else if( hour >=12 && hour <= 17 ){
                 
                 welcomeText = textType[1];
             }
-            else if ( hour > 18 && hour < 22){
+            else if ( hour >= 18 && hour < 20){
                 welcomeText = textType[2];
             }
-            else if( hour >= 22 && hour > 0){
+            else if( hour >= 20 && hour > 0){
                 welcomeText = textType[3]
             }
             greeting.innerHTML = welcomeText
